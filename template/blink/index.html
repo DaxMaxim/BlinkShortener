@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/blink.css' %}">
+    <title></title>
+  </head>
+  <body>
+      <div class="jumbotron">
+        Welcome to Blinkshortener
+      </div>
+      <br><br>
+
+
+      &nbsp &nbsp &nbsp This is a Url shortening service for free. You can enter and submit a long Url and you'll be redirected to a page showing the converted short Url.
+
+      <br><br>
+
+    <form class="" action="" method="post" id="post-form">
+      {% csrf_token %}
+      &nbsp &nbsp &nbsp;
+      {{form}}
+
+      <button type="submit"> Submit </button>
+
+
+    </form>
+
+
+  </body>
+
+
+
+
+</html>
